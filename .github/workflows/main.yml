@@ -7,7 +7,7 @@ on:
     - cron: 0 0/1 * * *
 
 jobs:
-  Cloud189Checkin:
+  migu-sign:
     runs-on: ubuntu-latest
 
     steps:
