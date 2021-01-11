@@ -2,9 +2,7 @@ name: migu-sign
 
 on:
   push:
-    [main]
   pull_request:
-    [main]
   schedule:
     - cron: 0 0/1 * * *
 
