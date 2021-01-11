@@ -1,2 +1,6 @@
-# migu-sign-in
-咪咕爱看签到获流量话费-github-action
+# 咪咕爱看签到
+
+一点小羊毛
+
+通过 github action 来实现自动签到（每天 50M 流量，每隔 5 天 0.38 元话费）
+
