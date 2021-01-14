@@ -8,7 +8,7 @@
 
 1. 获取 cookie
 
-   通过抓包咪咕爱看签到的请求，获取 cookie
+   通过抓包咪咕爱看签到的请求，获取 cookie，其实只需要 cookie 中的 mToken 这个值就好了
 
 2. 设置 cookie
 
