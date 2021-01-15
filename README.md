@@ -12,9 +12,11 @@
 
 2. 设置 cookie
 
+   先 fork 这个仓库，在仓库中依次点击 `Settings` - `Secrets` - `New repository secret`，
+
+   然后添加一个名为 `COOKIE` 的变量，内容为获取到的 cookie，类似于 `mToken=...`
+
    ![image-20210111220035535](README.assets/image-20210111220035535.png)
 
-   在仓库中如图点击，然后添加一个名为 `COOKIE` 的变量，内容为获取到的 cookie
-
-3. 随便发起一个 push 请求，可以修改一下 `README.md`，之后就会每小时进行一次签到。
+3. 随便发起一个 push 请求，可以修改一下 `README.md`，之后就会每小时进行一次签到（因为有时候签到会失败，好像是服务器不太好，就设置一下每小时签到一次保证成功吧）。
 
