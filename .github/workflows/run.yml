@@ -3,6 +3,9 @@ name: migu-sign
 on:
   push:
   pull_request:
+  fork:
+  watch:
+    types: [ started ]
   schedule:
     - cron: 0 */1 * * *
 

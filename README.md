@@ -12,11 +12,25 @@
 
 2. 设置 cookie
 
-   先 fork 这个仓库，在仓库中依次点击 `Settings` - `Secrets` - `New repository secret`，
-
-   然后添加一个名为 `COOKIE` 的变量，内容为获取到的 cookie，类似于 `mToken=...`
+   先 fork 这个仓库，在仓库中依次点击 `Settings` - `Secrets` - `New repository secret`，如下图所示
 
    ![image-20210111220035535](README.assets/image-20210111220035535.png)
 
-3. 随便发起一个 push 请求，可以修改一下 `README.md`，之后就会每小时进行一次签到（因为有时候签到会失败，好像是服务器不太好，就设置一下每小时签到一次保证成功吧）。
+   然后添加一个名为 `COOKIE` 的变量，内容为获取到的 cookie，类似于 `mToken=...`
+
+   `COOKIE` 示例：
+
+   ```text
+   mToken=eyJ0aW1lc3RhbXAiOjE2MTA3MTExMTM2MDQsInJvd1Rva2VuIjoiOWVkOGUwZTVlMjimOGRmZDE5N2Y4ZGJmOWYwMWQ1ODYiLCJ1aWQiOjMxoD1yOTUsInVzZXJOYW1lIjoiIiwibW9iaWxlIjoiMTUwNTg0ODU0ODgizCJ1c2VyUG9ydHJhaXQiOiIiLCJleHRlbmQiOiJ7XCJtb2JpbGVUeXBlXCI6XCIwXCJ1IiwiZGV2aWNlSWQiOiI3MzIxOTExmDY2MzQ2YzA5MWEzNjQwZjk0YTk3MzgxMSIsImNsaWVudFZlcnNpb24iOiI0LjquNCIsImRldmljZU1vZGVsIjaiaVBob25lIFgiLCJndWVzdCI6ZmFsc2UsInNpZ24iOiJjYjFlNzM0Y2NmYzExYTc2MWE4NGY1NDBhZmQ5YjE3MyJ9
+   ```
+
+3. 随便发起一个 push 请求，可以修改一下 `README.md`，或者自己给自己点个 star，就可以开始。之后就会每小时进行一次签到（因为有时候签到会失败，好像是服务器不太好，就设置一下每小时签到一次保证成功吧）。
+
+注意：
+
+在官方文档中有这么一段
+
+> To prevent unnecessary workflow runs, scheduled workflows may be disabled automatically. When a public repository is forked, scheduled workflows are disabled by default. In a public repository, scheduled workflows are automatically disabled when no repository activity has occurred in 60 days.
+
+也就是说，**定时执行的任务需要每隔 60 天激活一次**。
 
