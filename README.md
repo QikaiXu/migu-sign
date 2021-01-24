@@ -20,7 +20,7 @@
 
 ![image-20210111220035535](README.assets/image-20210111220035535.png)
 
-然后添加一个名为 `COOKIE` 的变量，内容为获取到的 cookie，类似于 `mToken=...`
+然后添加一个名为 `COOKIE` 的变量，内容为获取到的 cookie，类似于 `mToken=...`。
 
 `COOKIE` 示例：
 
@@ -32,7 +32,7 @@ mToken=eyJ0aW1lc3RhbXAiOjE2MTA3MTExMTM2MDQsInJvd1Rva2VuIjoiOWVkOGUwZTVlMjimOGRmZ
 
 随便发起一个 push 请求，可以修改一下 `README.md`，或者自己给自己点个 star，就可以开始。之后就会每小时进行一次签到（因为有时候签到会失败，好像是服务器不太好，就设置一下每小时签到一次保证成功吧）。
 
-注意：在官方文档中有这么一段
+注意，在官方文档中有这么一段：
 
 > To prevent unnecessary workflow runs, scheduled workflows may be disabled automatically. When a public repository is forked, scheduled workflows are disabled by default. In a public repository, scheduled workflows are automatically disabled when no repository activity has occurred in 60 days.
 
